@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collapsible Sidebar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="sidebar.css"/>
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+
+    <!-- Logo -->
+    <div class="sidebar-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0d0d0f" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+        </svg>
+      </div>
+      <span class="logo-text">Elevvo</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sidebar-nav">
+      <span class="nav-label">Main Menu</span>
+
+      <a class="nav-link active" href="#">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+        </span>
+        <span class="nav-link-text">Dashboard</span>
+        <span class="tooltip">Dashboard</span>
+      </a>
+
+      <a class="nav-link" href="#">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </span>
+        <span class="nav-link-text">Team</span>
+        <span class="nav-badge">4</span>
+        <span class="tooltip">Team</span>
+      </a>
+
+      <a class="nav-link" href="#">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+          </svg>
+        </span>
+        <span class="nav-link-text">Projects</span>
+        <span class="tooltip">Projects</span>
+      </a>
+
+      <a class="nav-link" href="#">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/>
+          </svg>
+        </span>
+        <span class="nav-link-text">Analytics</span>
+        <span class="tooltip">Analytics</span>
+      </a>
+
+      <span class="nav-label" style="margin-top:12px">Settings</span>
+
+      <a class="nav-link" href="#">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+          </svg>
+        </span>
+        <span class="nav-link-text">Settings</span>
+        <span class="tooltip">Settings</span>
+      </a>
+    </nav>
+
+    <!-- User Card -->
+    <div class="sidebar-bottom">
+      <div class="user-card">
+        <div class="avatar">EL</div>
+        <div class="user-info">
+          <div class="user-name">Elevvo User</div>
+          <div class="user-role">Frontend Intern</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Toggle Button -->
+  <button class="toggle-btn" id="toggleBtn" aria-label="Toggle Sidebar">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f0f0f0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"/>
+    </svg>
+  </button>
+
+  <!-- Mobile Overlay -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- Main Content -->
+  <main class="main" id="main">
+    <div class="main-header">
+      <h1>Good morning ☀️</h1>
+      <p>Here's what's happening with your projects today.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="card-label">Total Projects</div>
+        <div class="card-value card-accent">12</div>
+        <div class="card-sub">+2 this month</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Team Members</div>
+        <div class="card-value">8</div>
+        <div class="card-sub">Across 3 teams</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Tasks Done</div>
+        <div class="card-value card-accent">74%</div>
+        <div class="card-sub">31 of 42 tasks</div>
+      </div>
+      <div class="card">
+        <div class="card-label">Hours Logged</div>
+        <div class="card-value">126</div>
+        <div class="card-sub">This week</div>
+      </div>
+    </div>
+  </main>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>

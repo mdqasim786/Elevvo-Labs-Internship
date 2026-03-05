@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qasim's Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>Qasim's Blog</h1>
+    <p>Thoughts on Tech, Travel & Food</p>
+  </header>
+
+  <!-- FILTER SECTION -->
+  <section class="controls">
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-category="All">All</button>
+      <button class="filter-btn" data-category="Tech">Tech</button>
+      <button class="filter-btn" data-category="Travel">Travel</button>
+      <button class="filter-btn" data-category="Food">Food</button>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="Search posts by title...">
+  </section>
+
+  <!-- BLOG POSTS -->
+  <section class="blog-container">
+    <div id="blogGrid" class="blog-grid"></div>
+  </section>
+
+  <!-- PAGINATION -->
+  <div class="pagination">
+    <button id="prevBtn">Previous</button>
+    <span id="pageNumber"></span>
+    <button id="nextBtn">Next</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

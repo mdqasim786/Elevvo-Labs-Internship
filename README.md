@@ -3,7 +3,6 @@
 ![HTML](https://img.shields.io/badge/HTML-Frontend-orange)
 ![CSS](https://img.shields.io/badge/CSS-Styling-blue)
 ![JavaScript](https://img.shields.io/badge/JavaScript-Logic-yellow)
-![React](https://img.shields.io/badge/React-UI-61DAFB)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
 ## 📌 Overview
@@ -63,6 +62,9 @@ Created an **interactive collapsible sidebar** that opens and closes when the us
 - CSS Animation
 - Toggle Logic
 - Responsive UI
+
+<img width="1920" height="966" alt="image" src="https://github.com/user-attachments/assets/3bc9be76-8c8f-4b35-9c4d-c38b6fde5505" />
+
 
 ---
 

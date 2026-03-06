@@ -91,6 +91,8 @@ Built a **fully responsive contact form** that works well on both desktop and mo
 - Layout Structure
 - Mobile Responsiveness
 
+<img width="1918" height="966" alt="image" src="https://github.com/user-attachments/assets/e63806a2-99a2-49f7-b287-e9bdc4f388f7" />
+
 ---
 
 # 3️⃣ TaskFlow – One Page Website
@@ -116,6 +118,10 @@ Created a **modern one-page landing website** for a fictional task management ap
 - Responsive Design
 - UI Structuring
 
+<img width="1920" height="971" alt="image" src="https://github.com/user-attachments/assets/22268d65-3313-4caf-92c9-f749d0dc1307" />
+
+<img width="1890" height="842" alt="image" src="https://github.com/user-attachments/assets/adb3319e-7408-4c62-a423-701fe51a7eca" />
+
 ---
 
 # 4️⃣ Personal Blog Homepage
@@ -140,6 +146,9 @@ Developed a **personal blog homepage** displaying blog posts in a modern card la
 - Conditional Rendering
 - Filtering Logic
 - Responsive Grid Layout
+
+<img width="1889" height="977" alt="image" src="https://github.com/user-attachments/assets/cac19658-adb1-45e1-bb4b-e808ee09084a" />
+
 
 ---
 
